@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name             = 'AnalyticsBraze'
+    spec.name             = 'AnalyticsBrazeUI'
     spec.version          = '4.0.0'
     spec.summary          = "analytics-swift Cocoapods support"
     spec.homepage         = "https://github.com/sayalideopurkar/braze-segment-swift"
@@ -10,8 +10,8 @@ Pod::Spec.new do |spec|
     spec.swift_version = '5.0'
 
     # Specify the source files
-    spec.source_files  = 'Sources/SegmentBraze/**/*'
+    spec.source_files  = ['Sources/SegmentBraze/**/*', 'Sources/SegmentBrazeUI/**/*']
     spec.static_framework = true
     spec.dependency 'Segment'
-    spec.dependency 'BrazeKit', '~> 10.3.0'
+    spec.dependency 'BrazeUI', '~> 10.3.0'
 end
